@@ -2,7 +2,7 @@
 
 把下一步放在眼前。一个本地运行的 Windows 悬浮任务、计时与便签工具，使用 C#、.NET Framework 和 WinForms 构建。
 
-![浮记界面，使用自动化测试生成的演示数据](docs/images/preview.png)
+![浮记主面板半透明悬浮在桌面上](docs/images/main-panel-translucent-desktop.png)
 
 ## 功能
 
@@ -50,6 +50,18 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 
 已有用户的 Enter 与计时偏好会保留。详细说明见 [使用说明](使用说明.md)。
 
+## 界面预览
+
+三栏展开：左侧工作台管理任务、计时模式、透明度与置顶，中间为主面板的记录与便签，右侧细分步骤：
+
+![三栏展开：工作台、主面板与便签、细分步骤](docs/images/three-panels-translucent-desktop.png)
+
+折叠成一行，只保留任务名与累计计时；计时不受折叠、隐藏到托盘的影响：
+
+![折叠成一行悬浮在桌面](docs/images/collapsed-translucent-desktop.png)
+
+更多形态截图见 docs/images/ 目录，包含主面板、三栏与折叠状态的不透明和半透明卡片。
+
 ## 验证
 
 ~~~powershell
@@ -78,11 +90,11 @@ src/
   Mcp/             MCP 协议、工具与本地桥接
 tests/             行为、协议和界面检查
 assets/            应用图标
-docs/images/       仅使用测试数据的演示截图
+docs/images/       界面截图
 build.ps1          构建和测试入口
 app.manifest       Windows DPI 设置
 ~~~
 
-架构与维护约定见 [ARCHITECTURE.md](ARCHITECTURE.md)。首次上传方法见 [上传准备.md](上传准备.md)。
+架构与维护约定见 [ARCHITECTURE.md](ARCHITECTURE.md)。
 
 仓库只包含源代码、测试和文档。可执行程序应从源码构建，或由维护者另外作为 GitHub Release 附件发布。
