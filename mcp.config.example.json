@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "floating-tasks": {
+      "command": "C:\\Apps\\FloatingTasks\\FloatingTasks.Mcp.exe",
+      "args": []
+    }
+  }
+}

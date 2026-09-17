@@ -1,0 +1,44 @@
+# Build and test outputs
+/artifacts/
+/bin/
+/obj/
+*.exe
+*.dll
+*.pdb
+*.zip
+
+# Local user data, exports, backups
+/tasks.json
+/tasks.json.*
+/history/
+/数据保护备份/
+*.bak
+*.tmp
+*.log
+*.corrupt-*
+
+# Machine-specific MCP configuration
+/mcp.config.json
+/mcp.config.local.json
+
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.key
+*.pem
+
+# IDE, assistant, and OS state
+.vs/
+.vscode/
+.idea/
+.workbuddy/
+.codex/
+.agents/
+*.user
+*.suo
+.DS_Store
+Thumbs.db
+Desktop.ini
